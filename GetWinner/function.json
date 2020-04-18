@@ -1,0 +1,38 @@
+{
+  "bindings": [
+    {
+      "authLevel": "function",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "Request",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "Response"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "CosmosInput",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "gavs_DOCUMENTDB",
+      "databaseName": "gavsdb",
+      "collectionName": "gavsct",
+      "createLeaseCollectionIfNotExists": "true"
+    },
+    {
+      "type": "cosmosDB",
+      "name": "CosmosOutput",
+      "direction": "out",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "gavs_DOCUMENTDB",
+      "databaseName": "gavsdb",
+      "collectionName": "gavsct",
+      "createLeaseCollectionIfNotExists": "true"
+    }
+  ]
+}
