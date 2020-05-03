@@ -18,21 +18,17 @@
       "type": "cosmosDB",
       "name": "CosmosInput",
       "direction": "in",
-      "leaseCollectionName": "leases",
       "connectionStringSetting": "gavs_DOCUMENTDB",
       "databaseName": "gavsdb",
-      "collectionName": "gavsct",
-      "createLeaseCollectionIfNotExists": "true"
+      "collectionName": "gavsct"
     },
     {
       "type": "cosmosDB",
       "name": "CosmosOutput",
       "direction": "out",
-      "leaseCollectionName": "leases",
       "connectionStringSetting": "gavs_DOCUMENTDB",
       "databaseName": "gavsdb",
-      "collectionName": "gavsct",
-      "createLeaseCollectionIfNotExists": "true"
+      "collectionName": "gavsct"
     }
   ]
 }
